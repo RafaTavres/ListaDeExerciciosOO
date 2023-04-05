@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ListaDeExerciciosOO.Exercicio06.ConsoleApp
 {
-    internal class Temperatura
+    internal class TemperaturaCelsiu
     {
         public double celsiu;
-        public double Farenheint
+        public double ValorEmFarenheint
         {
             private set
             { }
