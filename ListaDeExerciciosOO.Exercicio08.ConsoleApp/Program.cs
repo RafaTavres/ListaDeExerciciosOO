@@ -9,7 +9,11 @@
             while (resposta.ToUpper() != "S")
             {
                 LataDeOleo lataDeOleo = new LataDeOleo();
-                lataDeOleo.PegaValorDosLadosDoUsuario();
+
+                Console.Write("Raio: ");
+                lataDeOleo.raio = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Altura: ");
+                lataDeOleo.altura = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Volume de " + lataDeOleo.Volume + "m³");
                 Console.WriteLine("Sair S/N");
                 resposta = Console.ReadLine();

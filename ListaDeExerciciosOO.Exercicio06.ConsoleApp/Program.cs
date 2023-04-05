@@ -9,7 +9,8 @@
             while (resposta.ToUpper() != "S")
             {
                 Temperatura temperatura = new Temperatura();
-                temperatura.PegaCelsiuDoUsuario();
+                Console.Write("-------------\nTemperatura em F°: ");
+                temperatura.celsiu = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Temperatura em C°: " + Math.Round(temperatura.Farenheint, 4) + "C°\n-------------");
                 Console.WriteLine("Sair S/N");
                 resposta = Console.ReadLine();

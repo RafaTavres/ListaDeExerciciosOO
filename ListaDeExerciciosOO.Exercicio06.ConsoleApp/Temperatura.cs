@@ -8,7 +8,7 @@ namespace ListaDeExerciciosOO.Exercicio06.ConsoleApp
 {
     internal class Temperatura
     {
-        private double celsiu;
+        public double celsiu;
         public double Farenheint
         {
             private set
@@ -17,13 +17,6 @@ namespace ListaDeExerciciosOO.Exercicio06.ConsoleApp
             {
                 return TransformaCelsiuEmFahrenheint();
             }
-        }
-
-        public double PegaCelsiuDoUsuario()
-        {
-            Console.Write("-------------\nTemperatura em F°: ");
-            celsiu = Convert.ToDouble(Console.ReadLine());
-            return celsiu;
         }
         private double TransformaCelsiuEmFahrenheint()
         {

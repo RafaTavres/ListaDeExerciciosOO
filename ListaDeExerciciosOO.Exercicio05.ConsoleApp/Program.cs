@@ -9,7 +9,8 @@
             while (resposta.ToUpper() != "S")
             {
                 Esfera esfera = new Esfera();
-                esfera.PegaTamanhoDoRaio();
+                Console.WriteLine("Raio: ");
+                esfera.raio = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("" + Math.Round(esfera.VolumeDaEsfera, 2) + " cm³");
                 Console.WriteLine("Sair S/N");
                 resposta = Console.ReadLine();

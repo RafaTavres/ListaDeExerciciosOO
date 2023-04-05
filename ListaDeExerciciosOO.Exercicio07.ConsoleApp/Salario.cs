@@ -8,7 +8,7 @@ namespace ListaDeExerciciosOO.Exercicio07.ConsoleApp
 {
     internal class Salario
     {
-        private double salarioBase, QuantidadeVendida, Porcentagem;
+        public double salarioBase, QuantidadeVendida, Porcentagem;
         public double SalarioTotal
         {
             private set { }
@@ -18,15 +18,6 @@ namespace ListaDeExerciciosOO.Exercicio07.ConsoleApp
             }
         }
 
-        public void PegaDadosDoUsuario()
-        {
-            Console.Write("-------------\nSalario base: ");
-            salarioBase = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Quantidade de dinheiro das Vendas:: ");
-            QuantidadeVendida = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Percentual ganho sobre as vendas: ");
-            Porcentagem = Convert.ToDouble(Console.ReadLine());
-        }
         private double CalculaSalarioTotalDOVendedor()
         {
             double Perncentual = Porcentagem / 100;

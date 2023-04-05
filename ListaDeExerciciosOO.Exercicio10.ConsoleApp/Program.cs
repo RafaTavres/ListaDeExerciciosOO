@@ -9,10 +9,15 @@
             while (resposta.ToUpper() != "S")
             {
                 Aluno media = new Aluno();
-                media.PegaDadosDoUsuario();
-         
+                Console.WriteLine("Nota da Prova 1: ");
+                media.prova1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Peso da Prova 1: ");
+                media.PesodaProva1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Nota da Prova 2: ");
+                media.prova2 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Peso da Prova 2: ");
+                media.PesodaProva2 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Resultado: " + media.MediaPonderada);
-
                 Console.WriteLine("Sair S/N");
                 resposta = Console.ReadLine();
 

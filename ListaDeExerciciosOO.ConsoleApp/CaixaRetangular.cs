@@ -8,9 +8,9 @@ namespace ListaDeExerciciosOO.ConsoleApp
 {
     public class CaixaRetangular
     {
-        private double altura;
-        private double largura;
-        private double comprimento;
+        public double altura;
+        public double largura;
+        public double comprimento;
         public double VolumeDaCaixa 
         {
             private set { }
@@ -21,18 +21,7 @@ namespace ListaDeExerciciosOO.ConsoleApp
             }
                    
         }
-
-        public void PegaValoresDosComprimentodDaCaixa()
-        {
-            Console.Write("Comprimento: ");
-             comprimento = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Largura: ");
-             largura = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Altura: ");
-             altura = Convert.ToDouble(Console.ReadLine());
-            VerificaSeValoresSaoMaioresQue0();
-        }
-        public double CalculaVolumeDaCaixa()
+       public double CalculaVolumeDaCaixa()
         {
             return altura * largura * comprimento;
         }

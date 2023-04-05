@@ -9,7 +9,12 @@
             while (resposta.ToUpper() != "S")
             {
                 Salario salario = new Salario();
-                salario.PegaDadosDoUsuario();
+                Console.Write("-------------\nSalario base: ");
+                salario.salarioBase = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Quantidade de dinheiro das Vendas:: ");
+                salario.QuantidadeVendida = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Percentual ganho sobre as vendas: ");
+                salario.Porcentagem = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Salario Final: " + salario.SalarioTotal);
                 Console.WriteLine("Sair S/N");
                 resposta = Console.ReadLine();

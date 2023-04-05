@@ -9,12 +9,16 @@
             while (resposta.ToUpper() != "S")
             {
                 ConsumoGasolina consumo = new ConsumoGasolina();
-                consumo.PegaOsDadosDoUsuario();
-
+                Console.WriteLine("Comsumo do carro por Km: ");
+                consumo.Gasolinagasta = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Kilometragem Inicial");
+                consumo.kilometInicial = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Kilometragem final");
+                consumo.kilometFinal = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Resultado: " + consumo.QuantidadeGastaDeGasolina + " Km/L");
 
                 Console.WriteLine("Sair S/N");
-                resposta = Console.ReadLine();
+                resposta = Console.ReadLine();           
             }
         }
 

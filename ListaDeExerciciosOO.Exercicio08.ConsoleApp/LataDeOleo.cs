@@ -8,7 +8,7 @@ namespace ListaDeExerciciosOO.Exercicio08.ConsoleApp
 {
     internal class LataDeOleo
     {
-        private double raio, altura;
+        public double raio, altura;
         public double Volume
         {
             private set { }
@@ -18,13 +18,6 @@ namespace ListaDeExerciciosOO.Exercicio08.ConsoleApp
             }
         }
 
-        public void PegaValorDosLadosDoUsuario()
-        {
-            Console.Write("Raio: ");
-            raio = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Altura: ");
-            altura = Convert.ToDouble(Console.ReadLine());
-        }
         private double CalculaVolumeDoCilindro()
         {
             return Math.Round(Math.PI, 2) * Math.Pow(raio, 2) * altura;

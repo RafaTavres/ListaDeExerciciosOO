@@ -8,10 +8,10 @@ namespace ListaDeExerciciosOO.Exercicio09.ConsoleApp
 {
     internal class Aluno
     {
-        private int Nota, notasDivididas, totalDasMedias,quantidadeAbsolutadeNotas;
-        private int TotalDeNotas = 1;
-        private List<int> notas = new List<int>();
-        private List<int> mediaNotas = new List<int>();
+        public int Nota, notasDivididas, totalDasMedias,quantidadeAbsolutadeNotas;
+        public int TotalDeNotas = 1;
+        public List<int> notas = new List<int>();
+        public List<int> mediaNotas = new List<int>();
         public int MediaHarmonica
         {
             private set { }
@@ -19,14 +19,6 @@ namespace ListaDeExerciciosOO.Exercicio09.ConsoleApp
             { 
                 return CalculaMediaHarmonica();
             }
-        }
-        public void PegaNotas()
-        {
-            Console.WriteLine("Nota: ");
-            Nota = Convert.ToInt32(Console.ReadLine());
-            TotalDeNotas *= Nota;
-            notas.Add(Nota);
-
         }
         private void CalculaMediaNotas()
         {
@@ -49,7 +41,6 @@ namespace ListaDeExerciciosOO.Exercicio09.ConsoleApp
         {
             CalculaMediaNotas(); 
             CalculaTOtalDeMedias();
-            Console.WriteLine("--------------------------------");
             quantidadeAbsolutadeNotas = notas.Count * TotalDeNotas;
             return quantidadeAbsolutadeNotas / totalDasMedias;
 

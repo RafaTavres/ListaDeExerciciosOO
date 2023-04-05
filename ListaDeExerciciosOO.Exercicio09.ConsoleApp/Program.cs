@@ -9,7 +9,10 @@
             Console.WriteLine("Calculadadora para média harmônica das notas de um Aluno\n------------------");
             while (resposta.ToUpper() != "S")
             {
-                mediaHarmonica.PegaNotas();
+                Console.WriteLine("Nota: ");
+                mediaHarmonica.Nota = Convert.ToInt32(Console.ReadLine());
+                mediaHarmonica.TotalDeNotas *= mediaHarmonica.Nota;
+                mediaHarmonica.notas.Add(mediaHarmonica.Nota);
                 Console.WriteLine("Sair S/N");
                 resposta = Console.ReadLine();
             }

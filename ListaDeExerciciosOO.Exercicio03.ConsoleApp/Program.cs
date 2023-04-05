@@ -9,7 +9,10 @@
             while (resposta.ToUpper() != "S")
             {
                 Cilindro cilindro = new Cilindro();
-                cilindro.PegaValorDosLadosDoUsuario();
+                Console.Write("Raio: ");
+                cilindro.raio = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Altura: ");
+                cilindro.altura = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Volume de " + cilindro.Volume + "m³");
                 Console.WriteLine("Sair S/N");
                 resposta = Console.ReadLine();
